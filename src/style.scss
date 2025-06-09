@@ -1,5 +1,6 @@
 @use "./styles/tailwind";
 @use "./styles/radlush.css";
+@use "./styles/variables" as *;
 
 :root {
   background-color: #222;
@@ -11,4 +12,30 @@ body {
   background-color: inherit;
   color: inherit;
   font-size: 1.6rem;
+
+  > * {
+    padding: 2rem;
+  }
+
+  > header {
+    background-color: #111;
+
+    nav a {
+      padding: .5rem;
+      border: 1px solid transparent;
+      border-radius: .5rem;
+
+      &:hover {
+        background-color: $purple;
+        border-color: $purple;
+      }
+
+      &.active {
+        background-color: $purple-light;
+        border-color: $purple-light;
+        text-decoration: underline;
+      }
+    }
+  }
+
 }
