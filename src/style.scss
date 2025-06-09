@@ -1,0 +1,14 @@
+@use "./styles/tailwind";
+@use "./styles/radlush.css";
+
+:root {
+  background-color: #222;
+  color: #ddd;
+  font: normal 10px/1.5 'Radlush';
+}
+
+body {
+  background-color: inherit;
+  color: inherit;
+  font-size: 1.6rem;
+}
