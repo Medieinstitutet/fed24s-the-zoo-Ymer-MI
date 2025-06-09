@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router'
 import { router } from './Router';
 
-createRoot(document.body).render(
+createRoot(document).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
