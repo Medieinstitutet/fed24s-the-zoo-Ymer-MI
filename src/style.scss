@@ -2,40 +2,65 @@
 @use "./styles/radlush.css";
 @use "./styles/variables" as *;
 
+$gray-dark: #222;
+$gray-light: #ddd;
+
 :root {
-  background-color: #222;
-  color: #ddd;
+
+  background-color: $gray-dark;
+  color: $gray-light;
   font: normal 10px/1.5 'Radlush';
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
   background-color: inherit;
   color: inherit;
   font-size: 1.6rem;
 
   > * {
+    width: 100%;
     padding: 2rem;
   }
 
-  > header {
-    background-color: #111;
+  > header, > footer {
+    background-color: darken($gray-dark, 10%);
+  }
 
-    nav a {
-      padding: .5rem;
-      border: 1px solid transparent;
-      border-radius: .5rem;
+  > header > nav a {
+    padding: .5rem;
+    font-size: 1.2em;
+    border: 1px solid transparent;
+    border-radius: .5rem;
 
-      &:hover {
-        background-color: $purple;
-        border-color: $purple;
-      }
-
-      &.active {
-        background-color: $purple-light;
-        border-color: $purple-light;
-        text-decoration: underline;
-      }
+    &:hover {
+      background-color: $purple;
+      border-color: $purple;
     }
+
+    &.active {
+      background-color: $purple-light;
+      border-color: $purple-light;
+      color: invert($gray-light);
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  > main {
+    flex-grow: 1;
+    background-color: $purple-dark;
+  }
+
+  > footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
   }
 
 }
