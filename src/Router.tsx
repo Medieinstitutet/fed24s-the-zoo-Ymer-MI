@@ -3,7 +3,7 @@ import { Layout } from './components/Layout'
 import { Error } from './components/Error'
 import { Home } from './components/Home'
 import { Animals } from './components/Animals'
-import { animalsLoader } from './loaders/AminalsLoader'
+import { animalsLoader } from './loaders/aminalsLoader'
 
 export const router = createBrowserRouter([
     {
