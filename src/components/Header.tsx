@@ -6,7 +6,7 @@ export const Header = () => {
         <nav>
             <ul className="flex gap-4">
                 <li><NavLink to='/'>Home</NavLink></li>
-                <li><NavLink to='/animals'>About</NavLink></li>
+                <li><NavLink to='/animals'>Animals</NavLink></li>
             </ul>
         </nav>
     </header>
