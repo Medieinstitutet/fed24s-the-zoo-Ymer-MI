@@ -2,6 +2,7 @@ import { Outlet, useLoaderData } from "react-router"
 import { Header } from "./Header"
 import { Footer } from "./Footer"
 import type { Animal } from "../models/Animal"
+import { AnimalsContext } from '../context/AnimalsContext';
 
 export const Layout = () => {
     const { animals } = useLoaderData<{animals: Animal[]}>()
@@ -10,9 +11,11 @@ export const Layout = () => {
 
     return <body>
         <Header />
-        <main className="md:w-[80%]">
-            <Outlet />
-        </main>
+        <AnimalsContext.Provider value={{ animals, dispatch: () => {} }}>
+            <main className="md:w-[80%]">
+                <Outlet />
+            </main>
+        </AnimalsContext.Provider>
         <Footer />
     </body>
 }
