@@ -1,15 +1,13 @@
 import { Outlet, useLoaderData } from "react-router"
+import { useReducer } from "react";
 import { Header } from "./Header"
 import { Footer } from "./Footer"
 import type { Animal } from "../models/Animal"
 import { AnimalsContext } from '../context/AnimalsContext';
-import { useReducer } from "react";
-import { AnimalsReducer } from "../reducers/AnimalReducer";
+import { AnimalsReducer } from "../reducers/AnimalsReducer";
 
 export const Layout = () => {
     const [animals, dispatch] = useReducer(AnimalsReducer, useLoaderData<{animals: Animal[]}>().animals)
-
-    console.log(animals)
 
     return <body>
         <Header />
