@@ -1,4 +1,8 @@
-type Medicine = 'Antibiotika' | 'Inga' | 'Ögondroppar'
+enum Medicine {
+    'Anitibiotika',
+    'Inga',
+    'Ögondroppar'
+}
 
 interface IAnimal {
     name: string
