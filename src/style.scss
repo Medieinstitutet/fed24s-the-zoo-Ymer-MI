@@ -13,6 +13,11 @@ $gray-light: #ddd;
   font: normal 10px/1.5 'Radlush';
 }
 
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
 body {
   display: flex;
   flex-direction: column;

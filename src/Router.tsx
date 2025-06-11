@@ -14,7 +14,11 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Animals />
-            }
+            },
+            /* {
+                path: '/:id',
+                element: < />
+            } */
         ]
     }
 ])
