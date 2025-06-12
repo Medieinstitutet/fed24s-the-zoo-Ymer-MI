@@ -1,0 +1,37 @@
+li.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1rem;
+    border: 1px solid rgb(255 255 255 / .4);
+    border-radius: .75rem;
+
+    // Glass effect from Tailwind
+    background-color: rgb(255 255 255 / .15);
+    --tw-backdrop-blur: blur(12px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+
+    &.hungry {
+        border-color: rgb(255, 0, 0 / .4);
+    }
+
+    > :first-child {
+        background-color: rgb(10, 10, 10 / .1);
+        border-radius: .75rem .75rem 0 0;
+    }
+
+    > a[data-discover='true'] {
+        text-decoration: underline;
+    }
+
+    h3 {
+        font-size: inherit;
+    }
+}

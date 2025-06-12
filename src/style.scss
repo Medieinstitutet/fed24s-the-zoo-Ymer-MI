@@ -7,15 +7,9 @@ $gray-dark: #222;
 $gray-light: #ddd;
 
 :root {
-
   background-color: $gray-dark;
   color: $gray-light;
   font: normal 10px/1.5 'Radlush';
-}
-
-h1 {
-  font-size: 3em;
-  text-align: center;
 }
 
 body {
@@ -31,6 +25,19 @@ body {
   > * {
     width: 100%;
     padding: 2rem;
+
+    h1, h2, h3 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
   }
 
   > header, > footer {
