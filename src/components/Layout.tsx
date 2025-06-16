@@ -10,12 +10,12 @@ export const Layout = () => {
     const [animals, dispatch] = useReducer(AnimalsReducer, useLoaderData<{animals: Animal[]}>().animals)
 
     return <body>
-        <Header />
         <AnimalsContext.Provider value={{ animals, dispatch }}>
+        <Header />
             <main className="md:w-[80%]">
                 <Outlet />
             </main>
-        </AnimalsContext.Provider>
         <Footer />
+        </AnimalsContext.Provider>
     </body>
 }
