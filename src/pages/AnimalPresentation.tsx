@@ -4,10 +4,11 @@ import { AnimalsContext } from '../context/AnimalsContext'
 import { Section } from '../components/styled/Wrappers'
 import { Button } from '../components/styled/Buttons'
 import { AnimalIMG } from '../components/AnimaIMG'
+import { ActionTypes } from '../reducers/AnimalsReducer'
 
 
 export const AnimalPresentation = () => {
-    const { id } = useParams(), animal = !id ? undefined : useContext(AnimalsContext).animals.filter(a => a.getID() === +id)[0]
+    const { id } = useParams(), { animals, dispatch } = useContext(AnimalsContext), animal = !id ? undefined : animals.filter(a => a.getID() === +id)[0]
 
     if (!animal) throw Error('Missing ID in params.')
 
@@ -19,7 +20,10 @@ export const AnimalPresentation = () => {
             <Section>
                 <h2 className='text-left'>{ animal.latinName }</h2>
                 <p>{ animal.longDescription }</p>
-                <Button className='self-start my-12' type='button' disabled={ animal.isFed }>Feed</Button>
+                <Button className='self-start my-12' type='button' disabled={ animal.isFed } onClick={() => dispatch({
+                    type: ActionTypes.FED,
+                    payload: `${animal.getID()}`
+                })}>Feed</Button>
             </Section>
         </Section>
     </Section>

@@ -19,7 +19,7 @@ export const AnimalsReducer = (animals: Animal[], action: Action) => {
             a = (JSON.parse(action.payload) as IAnimalResponse[]).map(a => new Animal(a))
             break
         case ActionTypes.FED:
-            a = animals
+            a = animals.map(a => a.getID() === +action.payload ? a.feed() : a   )
             break
         default:
             a = animals

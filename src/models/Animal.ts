@@ -47,8 +47,6 @@ export class Animal implements IAnimal {
 
     getID = () => this.id
 
-    feed = () => {
-        this.isFed = true
-        this.lastFed.setTime(Date.now())
-    }
+    feed = () => new Animal({...this, id: this.id, isFed: true, lastFed: new Date()} as IAnimalResponse)
+        
 }
