@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { AnimalsContext } from '../context/AnimalsContext'
-import { AnimalCard } from './AnimalCard'
+import { AnimalCard } from '../components/AnimalCard'
 
 export const Animals = () => {
     const { animals } = useContext(AnimalsContext)

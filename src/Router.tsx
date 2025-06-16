@@ -1,24 +1,28 @@
+import { Suspense } from 'react'
 import { createBrowserRouter } from 'react-router'
-import { Layout } from './components/Layout'
-import { Error } from './components/Error'
-import { Animals } from './components/Animals'
 import { animalsLoader } from './loaders/aminalsLoader'
+import { Layout } from './pages/Layout'
+import { Animals } from './pages/Animals'
+import { AnimalPresentation } from './pages/AnimalPresentation'
+import { Error } from './components/Error'
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Layout />,
-        errorElement: <Error />,
         loader: animalsLoader,
+        element: <Suspense fallback={<h1>Laddar...</h1>}>
+                    <Layout />
+                </Suspense>,
+        errorElement: <Error />,
         children: [
             {
                 path: '/',
                 element: <Animals />
             },
-            /* {
+            {
                 path: '/:id',
-                element: < />
-            } */
+                element: <AnimalPresentation />
+            }
         ]
     }
 ])
