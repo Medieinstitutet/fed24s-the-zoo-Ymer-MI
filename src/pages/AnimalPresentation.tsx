@@ -1,5 +1,5 @@
 import { useParams } from 'react-router'
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import { AnimalsContext } from '../context/AnimalsContext'
 import { Section } from '../components/styled/Wrappers'
 import { Button } from '../components/styled/Buttons'
