@@ -3,7 +3,8 @@ import ls from '../helpers/localStorageHelpers'
 
 export enum ActionTypes {
     LOADED,
-    FED
+    FED,
+    TOGGLEDFED
 }
 
 export type Action = {
@@ -19,7 +20,10 @@ export const AnimalsReducer = (animals: Animal[], action: Action) => {
             a = (JSON.parse(action.payload) as IAnimalResponse[]).map(a => new Animal(a))
             break
         case ActionTypes.FED:
-            a = animals.map(a => a.getID() === +action.payload ? a.feed() : a   )
+            a = animals.map(a => a.getID() === +action.payload ? a.feed() : a)
+            break
+        case ActionTypes.TOGGLEDFED:
+            a = animals.map(a => a.getID() === +action.payload ? a.toggleIsFed() : a)
             break
         default:
             a = animals

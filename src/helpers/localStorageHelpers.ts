@@ -5,8 +5,6 @@ const animalsKey = 'animals'
 export default {
     setAnimals(animals: Animal[]) { 
         localStorage.setItem(animalsKey, JSON.stringify(animals))
-
-        console.log(animals, localStorage.getItem(animalsKey))
     },
     getAnimals() { 
         const ls = localStorage.getItem(animalsKey)

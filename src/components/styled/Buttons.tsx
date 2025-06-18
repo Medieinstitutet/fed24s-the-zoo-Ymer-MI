@@ -19,6 +19,7 @@ export const Button = styled.button`
             background-color: var(--background-greyed-out);
             color: var(--foreground-greyed-out);
             text-decoration: none;
+            transform: none;
         }
     }
     
@@ -26,4 +27,11 @@ export const Button = styled.button`
         background-color: #8f8;
         text-decoration: underline;
     }
-    `
+    
+    &:hover {
+        transform: scale(1.2);
+    }
+        
+    &:active {
+        transform: scale(.8);
+    }`

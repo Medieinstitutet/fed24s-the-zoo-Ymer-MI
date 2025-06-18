@@ -47,8 +47,10 @@ export class Animal implements IAnimal {
 
     getID = () => this.id
 
+    checkHunger = (h: number) => this.lastFed.getTime() + (3600000 * h) - Date.now() < 1
+
+    // Function calls for reducers and states.
     feed = () => new Animal({...this, id: this.id, isFed: true, lastFed: new Date()} as IAnimalResponse)
 
     toggleIsFed = () => new Animal({...this, id: this.id, isFed: !this.isFed})
-        
 }
