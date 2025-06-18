@@ -22,6 +22,7 @@ export interface IAnimalResponse extends IAnimal {
 
 export class Animal implements IAnimal {
     private id: number
+    static HUNGERTIME = 4
     name: string
     latinName: string
     yearOfBirth: number
@@ -46,6 +47,8 @@ export class Animal implements IAnimal {
     }
 
     getID = () => this.id
+
+    nextFeed = () => new Date(this.lastFed.getTime() + (3600000 * Animal.HUNGERTIME))
 
     checkHunger = (h: number) => this.lastFed.getTime() + (3600000 * h) - Date.now() < 1
 
