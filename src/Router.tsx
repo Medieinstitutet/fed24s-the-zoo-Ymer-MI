@@ -5,12 +5,13 @@ import { Layout } from './pages/Layout'
 import { Animals } from './pages/Animals'
 import { AnimalPresentation } from './pages/AnimalPresentation'
 import { Error } from './components/Error'
+import { Loading } from './components/Loading'
 
 export const router = createBrowserRouter([
     {
         path: '/',
         loader: animalsLoader,
-        element: <Suspense fallback={<h1>Laddar...</h1>}>
+        element: <Suspense fallback={ <Loading /> }>
                     <Layout />
                 </Suspense>,
         errorElement: <Error />,
