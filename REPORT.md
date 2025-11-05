@@ -70,8 +70,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: G**
-📌 **Motivering:** Projektet uppfyller G-kraven men saknar specifika detaljer för flera VG-krav såsom användning av context och reducers.
+## 🏆 **Betyg: VG**
+📌 **Motivering:** Projektet uppfyller alla angivna krav med korrekt användning av React router, useContext, useReducer och Tailwind CSS. Dessutom inkluderas subtila animeringar och hantering av djurens status på ett användarvänligt sätt.
 
 💡 **Förbättringsförslag:**  
-För att nå VG-uppgradering behövs användning av context och reducers, subtila animationer samt en mer avancerad routerstruktur med layouts och error elements.
+I framtida uppgifter kan studenter överväga att förbättra tillgängligheten ytterligare, samt optimera kod med ytterligare enhetstester för reducer och actions.
