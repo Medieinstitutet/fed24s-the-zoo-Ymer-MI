@@ -70,8 +70,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller alla krav för betyg VG. Studenten visar att de behärskar en mängd tekniker: de använder en router för att visa olika sidor och har implementerat layouts, child routes och error-element på ett korrekt sätt. Koden hanterar trasiga bildlänkar och presenterar djurens status tydligt beroende på när de senast blev matade. Studenten har använt sig av context istället för props för komponentkommunikation och implementerat reducers för hantering av appens tillstånd, vilket visar på en god förståelse för dessa koncept.
+## 🏆 **Betyg: G**
+📌 **Motivering:** Projektet uppfyller G-kraven men saknar specifika detaljer för flera VG-krav såsom användning av context och reducers.
 
 💡 **Förbättringsförslag:**  
-Kodstrukturen är överlag bra, men det finns några små förbättringsområden: 1) Stavfel i fil- och komponentnamn som 'AnimalHungerWarnignProps' och 'AimalHungerWarning' kan orsaka förvirring och bör korrigeras. 2) Gå igenom och standardisera eventuellt otydlig namngivning för att ännu tydligare överföra syftet med olika komponenter och funktioner. 3) Några kommentarer skulle kunna läggas till i mer komplexa delar av koden för att öka läsbarheten för andra utvecklare. Annars inga större förbättringar nödvändiga.
+För att nå VG-uppgradering behövs användning av context och reducers, subtila animationer samt en mer avancerad routerstruktur med layouts och error elements.
