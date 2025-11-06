@@ -70,8 +70,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: VG**
-📌 **Motivering:** Projektet uppfyller alla angivna krav med korrekt användning av React router, useContext, useReducer och Tailwind CSS. Dessutom inkluderas subtila animeringar och hantering av djurens status på ett användarvänligt sätt.
+## 🏆 **Betyg: IG**
+📌 **Motivering:** Tekniskt fel vid AI-analys. Kontrollera manuellt.
 
 💡 **Förbättringsförslag:**  
-I framtida uppgifter kan studenter överväga att förbättra tillgängligheten ytterligare, samt optimera kod med ytterligare enhetstester för reducer och actions.
+Automatisk rättning med AI-assistant misslyckades. Vänligen kontrollera koden manuellt.
