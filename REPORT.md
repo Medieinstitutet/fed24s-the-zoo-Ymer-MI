@@ -1,7 +1,6 @@
 # 📌 Rättningsrapport – fed24s-the-zoo-Ymer-MI
 
 ## 🎯 Uppgiftens Krav:
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xBUCHFwF)
 # The Zoo
 
 I denna inlämningsuppgift kommer ni att bygga ett zoo. Zoo:t har ett antal djur som kommer behöva matas. 
@@ -66,12 +65,17 @@ Välj en teknik gällande css som ni antingen vill lära er mer om eller som ni 
 
 Ha roligt, skratta och lär er massor!
 
-
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: IG**
-📌 **Motivering:** Tekniskt fel vid AI-analys. Kontrollera manuellt.
+## 🏆 **Betyg: G**
+📌 **Motivering:** Projektet uppfyller alla grundläggande krav för betyget G. Koden är välstrukturerad med en logisk organisation av filer och komponenter. Studenten har implementerat en router för att hantera olika sidor, och det finns en översiktssida där användaren kan klicka på djur för att se mer detaljerad information. Matningsfunktionen är implementerad och tiden för matning sparas korrekt. Trasiga bildlänkar hanteras också på ett bra sätt. Styling har gjorts med en teknik utöver ren CSS, vilket uppfyller kravet. För att nå VG-kriterierna saknas dock implementation av context API och reducers, samt subtila animeringar vid användarinteraktioner.
 
 💡 **Förbättringsförslag:**  
-Automatisk rättning med AI-assistant misslyckades. Vänligen kontrollera koden manuellt.
+För att förbättra projektet och uppnå VG-kriterierna kan följande åtgärder vidtas: 
+1. Implementera användning av context API för att hantera delad state mellan komponenter istället för att förlita sig på props. 
+2. Använd reducers för att hantera djurens state, vilket kan ge en mer strukturerad och skalbar kodbas. 
+3. Förbättra felhanteringen, särskilt vid API-anrop, för att säkerställa att applikationen hanterar nätverksfel och trasiga bildlänkar på ett robust sätt. 
+4. Lägg till subtila animeringar vid användarinteraktioner för att förbättra användarupplevelsen. 
+5. Se över kodens DRY-princip och refaktorisera där det finns upprepningar. 
+6. Förbättra dokumentationen och kommentarer i koden för att öka läsbarheten och underlätta underhåll.
